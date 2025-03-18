@@ -14,10 +14,10 @@ int main(){
     scanf(" %c", &estado);
     fflush(stdin);
     printf("Digite o código da carta: ");
-    scanf("%s", &codigo_carta);
+    scanf(" %s", &codigo_carta);
     fflush(stdin);
     printf("Digite o nome da cidade: ");
-    scanf("%s", &nome_cidade);
+    scanf(" %s", &nome_cidade);
     printf("Digite a população: ");
     scanf("%d", &populacao);
     printf("Digite a área: ");
@@ -39,7 +39,6 @@ int main(){
     printf("\nPontos Turísticos: %d", pontos_turisticos);
     printf("\nDensidade Populacional: %.2f hab/km²", densidade);
     printf("\nPIB per Capita: %.2f\n", pib_per_capita);
-//    printf("\nCarta 1:\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2fkm²\nPIB: %.2f bilhões de reais\nPontos Turísticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f\n", estado, codigo_carta, nome_cidade, populacao, area, pib, pontos_turisticos, densidade, pib_per_capita);
     
     printf("\nCarta 2:\n");
     // Armazenando os valores das variáveis
@@ -73,6 +72,5 @@ int main(){
     printf("\nPontos Turísticos: %d", pontos_turisticos);
     printf("\nDensidade Populacional: %.2f hab/km²", densidade2);
     printf("\nPIB per Capita: %.2f\n", pib_per_capita2);
-//    printf("\nCarta 1:\nEstado: %c\nCódigo: %s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2fkm²\nPIB: %.2f bilhões de reais\nPontos Turísticos: %d\nDensidade Populacional: %.2f hb/km²\nPIB per Capita: %.2f reais\n", estado, codigo_carta, nome_cidade, populacao, area, pib, pontos_turisticos, densidade, pib_per_capita);
     return 0;
 }
