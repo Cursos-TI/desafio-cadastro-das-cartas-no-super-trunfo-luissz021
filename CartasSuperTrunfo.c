@@ -98,6 +98,13 @@ int main(){
     (pontos_turisticos > pontos_turisticos2) ? printf("Pontos Turísticos: Carta 1 (%d)\n", pontos_turisticos > pontos_turisticos2) : printf("Pontos Turísticos: Carta 2 (%d)\n", pontos_turisticos > pontos_turisticos2);
     (pib_per_capita > pib_per_capita2) ? printf("PIB per Capita: Carta 1 (%d)\n", pib_per_capita > pib_per_capita2) : printf("PIB per Capita: Carta 2 (%d)\n", pib_per_capita > pib_per_capita2);
     (super_poder1 > super_poder2) ? printf("Super Poder: Carta 1 (%d)\n", super_poder1 > super_poder2) : printf("Super Poder: Carta 2 (%d)\n", super_poder1 > super_poder2);
-    printf("\nFIM DO PROGRAMA\n");
+
+    // Definindo carta vencedora baseada em qual carta possui maior população
+    printf("\nEscolhendo carta vencedora baseada na população...\n");
+    if (populacao > populacao2){
+        printf("Carta 1 - %s: %d\n\n", nome_cidade, populacao);
+    } else {
+        printf("Carta 2 - %s: %d\n\n", nome_cidade2, populacao2);
+    }
     return 0;
 }
